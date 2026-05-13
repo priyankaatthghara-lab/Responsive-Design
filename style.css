@@ -77,7 +77,7 @@ nav{
     }
 }
 #section1{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
    
     justify-content: space-between;
@@ -85,6 +85,9 @@ nav{
     padding: 15px 70px;
     
     
+}
+main{
+    padding-top: 100px;
 }
 .leftdiv{
 
@@ -128,10 +131,12 @@ nav{
 }
 .rightin .image{
     width: 100%;
+    height: 300px;
 }
 
 .image img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -148,7 +153,7 @@ nav{
 .image-bottom h4{
     background-color:#151515;
     padding: 10px;
-    width: 40%;
+    width: 100%;
     padding:10px 15px;
     border-radius: 5px;
 }
@@ -170,22 +175,127 @@ nav{
 }
 @media(max-width:1400px){
     .leftdiv h1{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 }
 @media(max-width:800px){
+
     .leftdiv h1{
-        font-size: 30px;
+        font-size: 33px;
     }
+
     #section1{
+        padding: 15px 4vw;
         flex-direction: column-reverse;
+        gap: 40px;
     }
+
+    main{
+        padding-top: 80px;
+    }
+
     #section1 .leftdiv{
         width: 100%;
+        margin-top: 0;
     }
+
+    #section1 .rightin{
+        width: 100%;
+    }
+
+    .rightin .image{
+        width: 100%;
+        height: 300px;
+    }
+.leftdiv,
+.rightdiv{
+    margin-top: 0;
 }
+}
+
 @media(max-width:600px){
+
     .leftdiv h1{
-        font-size: 3vw;
+        font-size: 8vw;
+        line-height: 1.2;
     }
+
+    .price{
+        font-size: 25px;
+    }
+
+    .price .lgray{
+        font-size: 16px;
+    }
+
+    .cta{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta button{
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .rightin .image{
+        height: 220px;
+    }
+
+    .image-bottom{
+        flex-direction: column;
+    }
+
+    .image-bottom h4{
+        width: 100%;
+    }
+
+    .tag h4{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    #section1{
+        gap: 30px;
+    }
+
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    align-items: center;
+}
+.section2 h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120px;
+  background-image: url(fontimage2.png);
+  background-size: cover;
+  background-clip: text;
+  position: relative;
+  color: transparent;
+ 
+  
+}
+.section2 .bloom{
+    position: absolute;
+    filter: blur(100px);
+}
+.section2 h3{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+@media(max-width:655px){
+ .section2 h1{
+    white-space: nowrap;
+    font-size: 15vw;
+ }
+ .section2 h3{
+    white-space: nowrap;
+    font-size: 5vw;
+ }
 }
